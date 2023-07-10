@@ -2,3 +2,4 @@ llama-index
 streamlit
 langchain
 openai
+python-dotenv
