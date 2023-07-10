@@ -3,3 +3,4 @@ streamlit
 langchain
 openai
 python-dotenv
+docx2txt
