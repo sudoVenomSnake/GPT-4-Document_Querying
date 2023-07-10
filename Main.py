@@ -26,7 +26,7 @@ from llama_index.query_engine import RouterQueryEngine
 # nest_asyncio.apply()
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-openai.api_key = st.secrets["OPEN_AI_API"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 query_engine_tools = []
 
