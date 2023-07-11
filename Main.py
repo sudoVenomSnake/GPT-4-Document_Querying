@@ -68,7 +68,7 @@ llm_predictor = LLMPredictor(llm = ChatOpenAI(temperature = 0, model_name = 'gpt
 storage_context = StorageContext.from_defaults()
 service_context = ServiceContext.from_defaults(llm_predictor = llm_predictor)
 
-uploaded_file = st.file_uploader("Upload your file")
+uploaded_file = st.file_uploader()
 
 query_engine = preprocessing(uploaded_file)
 
