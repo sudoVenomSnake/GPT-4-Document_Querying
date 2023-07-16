@@ -61,7 +61,7 @@ def run(_query_engine, query):
 
 st.set_page_config(layout = "wide")
 
-st.title("Document Querying using GPT-4")
+st.title("Document Querying")
 
 llm_predictor = LLMPredictor(llm = ChatOpenAI(temperature = 0, model_name = 'gpt-4', max_tokens = -1, openai_api_key = openai.api_key))
 
