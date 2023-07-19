@@ -46,7 +46,7 @@ def preprocessing(uploaded_file):
             return context
         else:
             print('Case - B')
-            index = VectorStoreIndex.from_documents(document)
+            index = VectorStoreIndex.from_documents(document, service_context = service_context, storage_context = storage_context)
             global engine
             engine = index.as_query_engine(similarity_top_k = 3)
             return engine
